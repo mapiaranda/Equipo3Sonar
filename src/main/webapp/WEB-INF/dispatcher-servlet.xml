@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<bean
+		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
+
+	<!-- Most controllers will use the ControllerClassNameHandlerMapping above, 
+		but for the index controller we are using ParameterizableViewController, 
+		so we must define an explicit mapping for it. -->
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="index.htm">indexController</prop>
+				<prop key="login.htm">loginController</prop>
+				<prop key="home.htm">loginController</prop>
+				<prop key="abrirFichaje.htm">loginController</prop>
+				<prop key="cerrarFichaje.htm">loginController</prop>
+				<prop key="consulta.htm">loginController</prop>
+				<prop key="cambiarContrasena.htm">loginController</prop>
+				<prop key="vistaCambiarContrasena.htm">loginController</prop>
+				<prop key="crearIncidencia.htm">loginController</prop>
+				<prop key="registrarIncidencia.htm">loginController</prop>
+				<prop key="recuperarContrasena.htm">loginController</prop>
+				<prop key="enviarPeticionContrasena.htm">loginController</prop>
+				<prop key="Incidencias.htm">loginController</prop>
+				<prop key="incidenciasGestorUsuario.htm">loginController</prop>
+				<prop key="resolucionIncidencias.htm">loginController</prop>
+				<prop key="actualizarIncidencias.htm">loginController</prop>
+				<prop key="GestionarUsuarios.htm">loginController</prop>
+				<prop key="direccionAltaEmpleado.htm">loginController</prop>
+				<prop key="darAltaEmpleado.htm">loginController</prop>
+				<prop key="filtro.htm">loginController</prop>
+				<prop key="incs.htm">loginController</prop>
+				<prop key="formFich.htm">loginController</prop>
+				<prop key="resolverInc.htm">loginController</prop>
+				<prop key="RellenarIncidencia.htm">loginController</prop>
+				<prop key="incis.htm">loginController</prop>
+				<prop key="IrHome.htm">loginController</prop>
+				<prop key="accesoModulo.htm">loginController</prop>
+				<prop key="eliminarEmpleado.htm">loginController</prop>
+				<prop key="modificarEmpleado.htm">loginController</prop>
+				<prop key="promocionarEmpleado.htm">loginController</prop>
+				<prop key="CrearIncYCerrarFich.htm">loginController</prop>
+				<prop key="AlmFich.htm">loginController</prop>
+                <prop key="IncidenciasUsers.htm">loginController</prop>
+               <prop key="modEmpleado.htm">loginController</prop>
+                 <prop key="retroceder.htm">loginController</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+
+	<!-- The index controller. -->
+	<bean name="loginController" class="com.avengers.proyecto.loginController" />
+	<bean name="indexController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="index" />
+
+</beans>
