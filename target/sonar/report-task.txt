@@ -1,0 +1,7 @@
+organization=mapiaranda-github
+projectKey=mapiaranda_Equipo3Sonar
+serverUrl=https://sonarcloud.io
+serverVersion=7.5.0.19741
+dashboardUrl=https://sonarcloud.io/dashboard?id=mapiaranda_Equipo3Sonar
+ceTaskId=AWeT2SY3Qrt00S5VFOE-
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWeT2SY3Qrt00S5VFOE-

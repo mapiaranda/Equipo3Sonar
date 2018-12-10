@@ -1,0 +1,300 @@
+
+mmodelo.mongodb.DAOIncidencia#filtrarFecha(Ljava/lang/String;Ljava/util/Date;Ljava/util/List;)Ljava/util/List;
+__unknown_file (tipovalortotalIncidencias"34*å
+12X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ? Z(D¢
+ü
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(E
+%25"(java.util.Date#before(Ljava/util/Date;)Z*
+
+%24*	
+
+valor*
+5
+10*è
+
+34X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaK K(8wu
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaK# K(6
+%0"java.util.ArrayListä
+á
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaK K(8
+%1"java.util.ArrayList#<init>()V*
+
+%0y
+w
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaK K(9
+incidencias"__id*
+
+%0us
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaL L(#
+%2"org.bson.Documentà
+Ö
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaL L(%
+%3"org.bson.Document#<init>()V*
+
+%2w
+u
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaL L(&
+	documento"__id*
+
+%2~|
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaM# M(3
+%4"java.text.SimpleDateFormat≥
+∞
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaM M(A
+%5"6java.text.SimpleDateFormat#<init>(Ljava/lang/String;)V*
+
+%4*
+
+dd/MM/yyyyw
+u
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaM M(B
+	castFecha"__id*
+
+%4*
+33*£
+23X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(6º
+π
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(6
+%15">java.text.DateFormat#parse(Ljava/lang/String;)Ljava/util/Date;*
+
+	castFecha*
+
+%14*
+22*£
+13X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(7º
+π
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(7
+%24">java.text.DateFormat#parse(Ljava/lang/String;)Ljava/util/Date;*
+
+	castFecha*
+
+%23*
+12*É
+24X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(5ú
+ô
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(5
+%14"-java.lang.Object#toString()Ljava/lang/String;*
+
+%13*
+23*É
+14X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(6ú
+ô
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(6
+%23"-java.lang.Object#toString()Ljava/lang/String;*
+
+%22*
+13*°
+25X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(∫
+∑
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(*
+%13";org.bson.Document#get(Ljava/lang/Object;)Ljava/lang/Object;*
+
+	documento*
+
+tipo*
+24*°
+15X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(∫
+∑
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaZ Z(+
+%22";org.bson.Document#get(Ljava/lang/Object;)Ljava/lang/Object;*
+
+	documento*
+
+tipo*
+14*å
+27X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR> R(C°
+û
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(D
+%12"'java.util.Date#after(Ljava/util/Date;)Z*
+
+%11*	
+
+valor*
+25
+20*ü
+17X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaX X(¥
+±
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaX X(-
+%21"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+tipo*
+
+fechaFin*
+15
+33*£
+28X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(7º
+π
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(7
+%11">java.text.DateFormat#parse(Ljava/lang/String;)Ljava/util/Date;*
+
+	castFecha*
+
+%10*
+27*Ç
+29X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(6õ
+ò
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(6
+%10"-java.lang.Object#toString()Ljava/lang/String;*
+
+%9*
+28* 
+1X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javac	 c("k
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javac c(
+
+incidencias*ì
+5X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java\ \(≠
+™
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java\ \( 
+%30"'java.util.List#add(Ljava/lang/Object;)Z*
+
+incidencias*
+
+	documento*
+33*ç
+7X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[> [(C§
+°
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(D
+%29"*java.util.Date#equals(Ljava/lang/Object;)Z*
+
+%28*	
+
+valor*
+5
+33*°
+8X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(6º
+π
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(6
+%28">java.text.DateFormat#parse(Ljava/lang/String;)Ljava/util/Date;*
+
+	castFecha*
+
+%27*
+7*Å
+9X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(5ú
+ô
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(5
+%27"-java.lang.Object#toString()Ljava/lang/String;*
+
+%26*
+8*†
+30X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(π
+∂
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaR R(+
+%9";org.bson.Document#get(Ljava/lang/Object;)Ljava/lang/Object;*
+
+	documento*
+
+tipo*
+29*î
+20X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaT T(≠
+™
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaT T( 
+%17"'java.util.List#add(Ljava/lang/Object;)Z*
+
+incidencias*
+
+	documento*
+33*†
+10X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(∫
+∑
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.java[ [(*
+%26";org.bson.Document#get(Ljava/lang/Object;)Ljava/lang/Object;*
+
+	documento*
+
+tipo*
+9*«
+32X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaO O(™
+ß
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaO O(&
+%7"'java.util.List#get(I)Ljava/lang/Object;*
+
+totalIncidencias*
+""w
+u
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaO O(&
+	documento"__id*
+
+%7∂
+≥
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaP P(*
+%8"6java.lang.String#equalsIgnoreCase(Ljava/lang/String;)Z*
+
+tipo*
+fechaInicio*
+17
+30*è
+22X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS> S(C§
+°
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaS S(D
+%16"*java.util.Date#equals(Ljava/lang/Object;)Z*
+
+%15*	
+
+valor*
+20
+33*˚
+33X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaN N(ë
+é
+X
+NC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DAOIncidencia.javaN N(,
+%6"java.util.List#size()I*
+
+totalIncidencias*
+32
+1

@@ -1,0 +1,21 @@
+
+smodelo.mongodb.DBBroker#documentosEnColeccion(Lcom/mongodb/client/MongoCollection;)Lcom/mongodb/client/MongoCursor;
+__unknown_file (	coleccion"1*©
+1S
+IC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DBBroker.java;	 ;(¹
+¶
+S
+IC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DBBroker.java;	 ;(
+%0"Jcom.mongodb.client.MongoCollection#find()Lcom/mongodb/client/FindIterable;*
+
+	coleccion³
+°
+S
+IC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DBBroker.java;	 ;($
+%1"Kcom.mongodb.client.MongoIterable#iterator()Lcom/mongodb/client/MongoCursor;*
+
+%0"]
+S
+IC:\Users\Mapi\git\Equipo3Sonar\src\main\java\modelo\mongodb\DBBroker.java; ;(%
+
+%1
